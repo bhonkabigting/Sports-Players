@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    height: 100VH;
+}
+
+form {
+    width: 25%;
+    margin: 2% auto;
+    height: 90%;
+    display: inline-block;
+    padding: 20px;
+    text-align: start;
+    border: 2px solid black;
+    vertical-align: top;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin: 5% 5px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bolder;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    text-align: end;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+}
+
+main {
+    width: 70%;
+    margin: 2% auto;
+    display: inline-block;
+    text-align: start;
+    border: 2px solid black;
+    height: 90%;
+    overflow-y: scroll;
+}
+
+section {
+    display: inline-block;
+    width: 17.3%;
+    margin: 10px;
+    height: 200px;
+    padding: 10px 1px 15px;
+    vertical-align: top;
+    border: 1px solid black;
+    text-align: center;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+img {
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 5px;
+
+}

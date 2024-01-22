@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Player Lookup</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/js/athletes/index.js"></script>
+</head>
+    <body>
+        <form action='/search' method='post'>
+            <h1>Search Athletes</h1>
+            <label>Name:
+                <input type='text' name='name' value=''>            
+            </label>
+            <fieldset>
+                <legend>Gender</legend>
+                <label>
+                    <input type='checkbox' name='gender[]' value='male'>
+                    Male
+                </label>
+                <label>
+                    <input type='checkbox' name='gender[]' value='female'>
+                    Female
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Sports</legend>
+<%          for (let i = 0; i < sports.length; i++) {
+%>              <label>
+                    <input type='checkbox' name='sports[]' value='<%= sports[i].id %>'>
+                    <%= sports[i].sport %>
+                </label>
+<%          }
+%>            </fieldset>
+        </form>
+        <main>
+        </main>
+    </body>
+</html>
